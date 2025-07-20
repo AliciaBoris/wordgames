@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fun Word Games for Kids</title>
+  <style>
+    body {
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      background: linear-gradient(to right, #fceabb, #e6dab8);
+      margin: 0;
+      padding: 0;
+      color: #333;
+    }
+
+    header {
+      background-color: #c71a0a;
+      color: white;
+      padding: 1.5rem;
+      text-align: center;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      margin: 0;
+    }
+
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      padding: 2rem;
+    }
+
+    .game-card {
+      background-color: rgb(241, 243, 215);
+      border-radius: 15px;
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+      margin: 1rem;
+      padding: 1.5rem;
+      text-align: center;
+      width: 280px;
+      transition: transform 0.3s;
+    }
+
+    .book-card {
+      background-color: rgb(241, 243, 215);
+      border-radius: 15px;
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+      margin: 1rem;
+      padding: 1.5rem;
+      text-align: center;
+      width: 600px;
+      transition: transform 0.3s;
+    }
+
+    .game-card:hover, .book-card:hover {
+      transform: scale(1.05);
+    }
+
+    .game-title, .book-title {
+      font-size: 1.5rem;
+      color: #080808;
+      margin-bottom: 1rem;
+    }
+
+    .play-button, .buy-button {
+      background-color: #4CAF50;
+      border: none;
+      color: white;
+      padding: 10px 20px;
+      border-radius: 10px;
+      cursor: pointer;
+      font-size: 1rem;
+    }
+
+    .play-button:hover, .buy-button:hover {
+      background-color: #45a049;
+    }
+
+    footer {
+      background-color: #108d2b;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+      margin-top: 2rem;
+    }
+
+    .section-title {
+      text-align: center;
+      font-size: 2rem;
+      margin-top: 2rem;
+      color: #0a0100;
+    }
+    .banner {
+  background-image: url("word-games.png");
+  background-size: cover;
+  background-position: center;
+  height: 400px;
+  width: 100%;
+  margin-bottom: 20px;
+  border-bottom: 5px solid #ffb703;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+/* Nav Bar Styles */
+.navbar {
+  background-color: #f8bf2f;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  font-family: 'Comic Sans MS', cursive;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+.navbar .logo {
+  font-size: 1.8em;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+.navbar .nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.navbar .nav-links li a {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1em;
+}
+
+.navbar .nav-links li a:hover {
+  text-decoration: underline;
+}
+
+/* About Section */
+.about-section {
+  background: #f0f8ff;
+  padding: 40px 20px;
+  border-top: 4px dashed #37c20d;
+  margin-top: 30px;
+}
+
+.about-section h2 {
+  font-size: 2em;
+  color: #33c915;
+}
+
+.about-section p {
+  max-width: 600px;
+  margin: 0 auto;
+  font-size: 1.2em;
+  color: #333;
+}
+
+/* Game and Book Card Images */
+.card img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+.card img,
+.card-image {
+  width: 100%;
+  height: 150px;
+  object-fit: cover; /* or 'contain' if you want to keep full image without cropping */
+  border-radius: 10px;
+  display: block;
+  margin-bottom: 10px;
+}
+
+  </style>
+</head>
+<body>
+  <header>
+    <h1> Fun Word Games for Kids </h1>
+    <p>Learn and play with words!</p>
+  </header>
+
+  <nav class="navbar">
+  <div class="logo">Fun Word Games</div>
+  <ul class="nav-links">
+    <li><a href="#about">About</a></li>
+    <li><a href="#games">Games</a></li>
+    <li><a href="#book">Books</a></li>
+  </ul>
+</nav>
+
+  <div class="banner"></div>
+
+  <section id="about" class="about-section">
+  <h2>About</h2>
+  <p>This website is designed to showcase activities that encourage learning in a fun and interactive manner for children. Because we know that children love to learn while having fun, we have curated learning activites crafted to stimulate the learning cortex in children through activities that improve vocabulary such as word games, spelling, and critical thinking skills.</p>
+</section>
+
+  </div>
+  <main class="container">
+    <div class="game-card">
+      <div class="game-title">Spell It Right</div>
+      <img src="moana-png-free-download-10.png" alt="Moana Game" class="card-image">
+      <p>Test your spelling skills in a fun and interactive way!</p>
+      <button class="play-button" onclick="location.href='SPELLING-GAME/index.html'">Play</button>
+    
+    </div>
+
+    <div class="game-card">
+      <div class="game-title">Spell Twist</div>
+      <img src="illustration-cute-puppy-cartoon-29714038.png" alt="Moana Game" class="card-image">
+      <p>Match words correctly and beat the clock!</p>
+      <button class="play-button" onclick="location.href='NEW-SPELLING-GAME'">Play</button>
+    </div>
+
+    <div class="game-card">
+      <div class="game-title">WordBox</div>
+      <img src="Multicolored_Bird_PNG_Clipart-501.png" alt="Moana Game" class="card-image">
+      <p>Unscramble letters to form as many words as you can!</p>
+      <button class="play-button" onclick="location.href='WORD-BOX-GAME/index.html'">Play</button>
+    </div>
+  </main>
+
+  <h2 class="section-title">📘 Buy Our Children's Fun and Activity Books</h2>
+  <section class="container">
+    <div class="book-card">
+      <div class="book-title">Children's Fun and Activity Book 1</div>
+      <p>Filled with puzzles, coloring pages, and brain-boosting fun for kids!</p>
+      <button class="buy-button" onclick="location.href='buy-book.html'">Buy Now</button>
+    </div>
+  </section>
+
+  <section class="container">
+    <div class="book-card">
+      <div class="book-title">Children's Fun and Activity Book 2</div>
+      <p>Filled with word guess games, coloring activities, coding games, riddles and brain-boosting fun for kids!</p>
+      <button class="buy-button" onclick="location.href='buy-book.html'">Buy Now</button>
+    </div>
+  </section>
+
+  <section class="container">
+    <div class="book-card">
+      <div class="book-title">Support us to create more!</div>
+      <p>Please support us to keep creating more free learning activities for your Children by donating to our Course!</p>
+      <button class="buy-button" onclick="location.href='buy-book.html'">Support Now</button>
+    </div>
+  </section>
+  <footer>
+    &copy; 2025 Fun Word Games for Kids. All rights reserved. contact sitidodigitech@gmail.com
+  </footer>
+</body>
+</html>

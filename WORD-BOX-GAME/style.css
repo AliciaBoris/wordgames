@@ -1,0 +1,130 @@
+body {
+  font-family: 'Comic Sans MS', sans-serif;
+  background: linear-gradient(to right, #fbc2eb, #a6c1ee);
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  text-align: center;
+}
+
+.container {
+  background-color: #fff8dc;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  max-width: 700px;
+  width: 90%;
+  animation: popin 0.5s ease;
+}
+@keyframes popin {
+  0% {
+    transform: scale(0.9);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+#base-word {
+  font-size: 2em;
+  font-weight: bold;
+  color: #248f0a;
+  margin-bottom: 20px;
+}
+
+.tiles {
+  margin: 20px auto;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.tile {
+  background: #ffb703;
+  padding: 15px;
+  margin: 5px;
+  font-size: 2.5em;
+  border-radius: 10px;
+  cursor: grab;
+  box-shadow: 2px 2px 5px #888;
+  transition: transform 0.2s ease;
+}
+
+.tile:active {
+  transform: scale(1.1);
+}
+
+.drop-zone {
+  border: 4px dashed #0c9208;
+  background-color: #ffffff;
+  padding: 20px;
+  min-height: 100px;
+  margin: 20px auto;
+  width: 300px;
+  border-radius: 15px;
+  position: relative;
+  animation: bounceBox 2s infinite;
+}
+
+@keyframes bounceBox {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-5px);
+  }
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 1em;
+  background-color: #f70b0bff;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  color: white;
+  margin-top: 10px;
+}
+
+button:hover {
+  background-color: #0077b6;
+}
+
+#feedback {
+  font-size: 2.5em;
+  margin: 10px;
+  color: green;
+}
+
+#word-list {
+  list-style-type: none;
+  font-size: 2.2em;
+  padding: 0;
+  margin: 10px auto;
+  max-height: 150px;
+  overflow-y: auto;
+  text-align: left;
+  width: fit-content;
+}
+
+h1 {
+  font-size: 2.5em;
+  color: #ca2213;
+  margin-bottom: 0.2em;
+}
+@keyframes celebrate {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.2) rotate(5deg); }
+  100% { transform: scale(1); }
+}
+
+.celebrate {
+  animation: celebrate 0.5s ease-in-out;
+}
+
+

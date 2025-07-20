@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spell It Right!</title>
+    <link rel="stylesheet" href="styles.css">
+    <script>myscript.js</script>
+</head>
+<body>
+    <div class="game-container">
+        <h1>Spell It Right!</h1>
+        <!-- Add the audio element -->
+    <audio id="backgroundMusic" loop>
+        <source src="pixel-fight-8-bit-arcade-music-background-music-for-video-208775.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+
+    <button onclick="playMusic()">Play Music</button>
+    <button onclick="pauseMusic()">Pause Music</button>
+    <script>
+        // JavaScript functions to control music
+        const music = document.getElementById('backgroundMusic');
+
+        function playMusic() {
+            music.play();
+        }
+
+        function pauseMusic() {
+            music.pause();
+        }
+    </script>
+        <p id="instruction">Unscramble the letters to spell the word correctly!</p>
+        <div id="scrambledWord" class="scrambled-word"></div>
+        <input type="text" id="userInput" placeholder="Enter the word here" />
+        <button onclick="checkAnswer()">Submit</button>
+        <p id="feedback"></p>
+        <p id="score">Score: 0</p>
+        <button id="nextWordBtn" onclick="nextWord()" style="display:none;">Next Word</button>
+        <button id="prevWordBtn" onclick="prevWord()">Previous Word</button>
+    </div>
+
+    <script src="myscript.js"></script>
+</body>
+</html>
