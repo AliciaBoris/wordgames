@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Moana Word Guess</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="outer-wrapper">
+    <div class="game-container">
+      <h1>🌊 Moana Word Guess 🌺</h1>
+
+            <!-- 🎵 Music Control -->
+      <div class="music-control">
+        <audio id="gameMusic" src="retro-game-arcade-236133.mp3" loop></audio>
+        <button onclick="toggleMusic()">🎵 Play / Pause Music</button>
+      </div>
+
+      <p>Drag the letters into the box to form Moana-themed words!</p>
+
+      <div id="score">Score: 0 | High Score: 0</div>
+
+      <div id="tile-container" class="tile-container"></div>
+
+      <div id="drop-zone" class="drop-zone" ondragover="allowDrop(event)" ondrop="drop(event)">
+        <!-- Drop Zone -->
+      </div>
+
+      <!-- Placeholder for animated Moana image -->
+      <div class="moana-image">
+        <img src="moana-png-free-download-10.png" alt="Moana Animation" />
+      </div>
+      <div class="buttons">
+        <button onclick="checkWord()">Check Word</button>
+        <button onclick="resetTiles()">Reset Tiles</button>
+        <button onclick="showHint()">Hint</button>
+      </div>
+
+      <p id="hint"></p>
+      <p id="message"></p>
+      <p id="game-over" class="game-over">🎉 Game Over! You’ve completed all words!</p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
