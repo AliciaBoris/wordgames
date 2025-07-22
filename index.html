@@ -172,11 +172,48 @@
 .card-image {
   width: 100%;
   height: 150px;
-  object-fit: cover; /* or 'contain' if you want to keep full image without cropping */
+  object-fit: contain; /* or 'contain' if you want to keep full image without cropping */
   border-radius: 10px;
   display: block;
   margin-bottom: 10px;
+
+  /* MOBILE RESPONSIVENESS */
+@media (max-width: 480px) {
+  .tile {
+    width: 40px;
+    height: 40px;
+    font-size: 18px;
+  }
+
+  .drop-zone {
+    min-height: 80px;
+    padding: 10px;
+  }
+
+  .buttons button {
+    padding: 8px 10px;
+    font-size: 13px;
+    min-width: 90px;
+  }
+
+  h1 {
+    font-size: 1.5em;
+  }
+
+  #score {
+    font-size: 14px;
+  }
+
+  .moana-image img {
+    width: 100px;
+  }
+
+  #message, #hint {
+    font-size: 13px;
+  }
 }
+}
+
 
   </style>
 </head>
@@ -191,7 +228,7 @@
   <ul class="nav-links">
     <li><a href="#about">About</a></li>
     <li><a href="#games">Games</a></li>
-    <li><a href="#book">Books</a></li>
+    <li><a href="#books">Books</a></li>
   </ul>
 </nav>
 
@@ -199,38 +236,46 @@
 
   <section id="about" class="about-section">
   <h2>About</h2>
-  <p>This website is designed to showcase activities that encourage learning in a fun and interactive manner for children. Because we know that children love to learn while having fun, we have curated learning activites crafted to stimulate the learning cortex in children through activities that improve vocabulary such as word games, spelling, and critical thinking skills.</p>
+  <p>Fun Word Games is designed to showcase activities that encourage learning in a fun and interactive manner for children. Because we know that children love to learn while having fun, we have curated learning activites crafted to stimulate the learning cortex in children through activities that improve vocabulary such as word games, spelling, and critical thinking skills.</p>
 </section>
 
   </div>
   <main class="container">
     <div class="game-card">
       <div class="game-title">Spell It Right</div>
-      <img src="moana-png-free-download-10.png" alt="Moana Game" class="card-image">
-      <p>Test your spelling skills in a fun and interactive way!</p>
+      <img src="clipart-kids-in-school-7.png" alt="Spelling Game" class="card-image">
+      <p>Unscramble letters to form as many words as you can!</p>
       <button class="play-button" onclick="location.href='SPELLING-GAME/index.html'">Play</button>
-    
-    </div>
-
+      </div>
+<section id="games" class="games-section"></section>
     <div class="game-card">
       <div class="game-title">Spell Twist</div>
-      <img src="illustration-cute-puppy-cartoon-29714038.png" alt="Moana Game" class="card-image">
-      <p>Match words correctly and beat the clock!</p>
+      <img src="illustration-cute-puppy-cartoon-29714038.png" alt="Spell twist" class="card-image">
+      <p>Test your spelling skills in a fun and interactive way!</p>
       <button class="play-button" onclick="location.href='NEW-SPELLING-GAME'">Play</button>
     </div>
 
     <div class="game-card">
       <div class="game-title">WordBox</div>
       <img src="Multicolored_Bird_PNG_Clipart-501.png" alt="Moana Game" class="card-image">
-      <p>Unscramble letters to form as many words as you can!</p>
+      <p>Make as many small words as you can from big words!</p>
       <button class="play-button" onclick="location.href='WORD-BOX-GAME/index.html'">Play</button>
     </div>
-  </main>
 
+    <div class="game-card">
+      <div class="game-title">Moana Word Guess</div>
+      <img src="moana-png-free-download-10.png" alt="Moana Game" class="card-image">
+      <p>Test your spelling skills in a fun and interactive way!</p>
+      <button class="play-button" onclick="location.href='MOANA-WORD-GAME/index.html'">Play</button>
+    
+    </div>
+  </main>
+<section id="books" class="books-section"></section>
   <h2 class="section-title">📘 Buy Our Children's Fun and Activity Books</h2>
   <section class="container">
     <div class="book-card">
       <div class="book-title">Children's Fun and Activity Book 1</div>
+      <img src="children-activity-book-1.png" alt="Moana Game" class="card-image">
       <p>Filled with puzzles, coloring pages, and brain-boosting fun for kids!</p>
       <button class="buy-button" onclick="location.href='buy-book.html'">Buy Now</button>
     </div>
@@ -240,6 +285,7 @@
     <div class="book-card">
       <div class="book-title">Children's Fun and Activity Book 2</div>
       <p>Filled with word guess games, coloring activities, coding games, riddles and brain-boosting fun for kids!</p>
+      <img src=" activity-book-for-kids-2-pic-new.png" alt="Moana Game" class="card-image">
       <button class="buy-button" onclick="location.href='buy-book.html'">Buy Now</button>
     </div>
   </section>
